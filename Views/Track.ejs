@@ -3,6 +3,7 @@
 
 <head>
     <% include Other/Head %>
+    <link rel="stylesheet" href="../Public/Javascript/Map.js">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
     <div class="row" style="margin-top: 10px">
         <div class="container">
             <fieldset>
-                <form class="form-horizontal">
+                <form class="form-horizontal" id="DevForm">
                     <div class="form-group">
                         <input class="form-control" type="text" name="DEV_ID" placeholder="Enter Device ID" required>
                     </div>
@@ -44,6 +45,9 @@
             </div>
             </div>
     </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5A94GgME82AGLgZyo1bkB1r8F0i7vyF0&callback=initMap"></script>
+    <script src="../Public/Javascript/Map.js"></script>
 
     <% include Other/Foot %>
 </body>

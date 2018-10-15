@@ -1,6 +1,6 @@
 {
     "name": "real-time-tracking-app",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "description": "Web Application used to capture coordinates from a GPS tracker and use them to give real time geo-location using Google Maps APIs.",
     "main": "Server/Server.js",
     "scripts": {

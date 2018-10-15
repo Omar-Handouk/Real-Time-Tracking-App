@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include Other/Head %>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Asset Tracker</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/Index">Home</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="/Track">Track An Asset</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="row" style="margin-top: 10px">
+        <div class="container">
+            <fieldset>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="DEV_ID" placeholder="Enter Device ID" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-default" type="submit" id="FIND" value="Get Location">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 10px">
+        <div class="container">
+            <div id="Locator">
+
+            </div>
+            </div>
+    </div>
+
+    <% include Other/Foot %>
+</body>
+
+</html>

@@ -5,12 +5,12 @@ let request = require('request');
 
 let ENV = require('../../Miscellaneous/ENVIROMENT_VARIABLES.json') || process.env;
 
-let cloudantDB_URL = ENV.VCAP_SERVICES.cloudantNoSQLDB[0].credentials.url;
-console.log('GEO_Handler<INFO>: ' + cloudantDB_URL); // eslint-disable-line
-
 let now = new Date();
 
-exports.sendGEOJSON = function(req, response, next) { // eslint-disable-line
+exports.sendGEOJSON = async function (req, response, next) { // eslint-disable-line
+
+    let cloudantDB_URL = ENV.VCAP_SERVICES.cloudantNoSQLDB[0].credentials.url;
+    console.log('GEO_Handler<INFO>: ' + cloudantDB_URL); // eslint-disable-line
 
     let payload = req.body;
 

@@ -21,10 +21,18 @@ app.use(body_parser.json());
 app.use(method_override('_method'));
 
 // TODO: Add Routers Here
-let ROUTER  = require('./Routes/Router');
-ROUTER(app);
+let ROUTER  = require('./Routes/Router'); ROUTER(app);
 
 // TODO: Add 404 and 500 Errors
+app.use((request, response, next) => { // eslint-disable-line
+    response.status(404);
+    response.write('ERROR 404: Page not Found');
+});
+
+app.use((error, request, response, next) => { // eslint-disable-line
+    response.status(500);
+    response.write('ERROR 505: Internal server error');
+});
 
 app.listen(PORT, () => {
     console.log('Server is Listening to PORT: ' + PORT); // eslint-disable-line

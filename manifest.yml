@@ -1,0 +1,8 @@
+---
+- name: Real-Time-Geo-Tracker
+  memory: 256M
+  instances: 1
+  timeout: 180
+  command: npm start
+  services:
+    - Cloudant-Integration

@@ -1,0 +1,44 @@
+{
+    "name": "real-time-tracking-app",
+    "version": "0.1.0",
+    "description": "Web Application used to capture coordinates from a GPS tracker and use them to give real time geo-location using Google Maps APIs.",
+    "main": "Server/Server.js",
+    "scripts": {
+        "start": "node Server/Server.js",
+        "dev": "nodemon Server/Server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Omar-Handouk/Real-Time-Tracking-App.git"
+    },
+    "keywords": [
+        "Web-App",
+        "Real-Time-Geo-location",
+        "Cloudant",
+        "Cloud-Foundry",
+        "REST-APIs",
+        "Google-Maps-APIs"
+    ],
+    "author": "Omar Ihab Hamed Handouk",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Omar-Handouk/Real-Time-Tracking-App/issues"
+    },
+    "homepage": "https://github.com/Omar-Handouk/Real-Time-Tracking-App#readme",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "date-and-time": "^0.6.2",
+        "dotenv": "^6.1.0",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "jshint": "^2.9.6",
+        "method-override": "^3.0.0",
+        "npm": "^6.4.1",
+        "path": "^0.12.7",
+        "request": "^2.88.0"
+    },
+    "devDependencies": {
+        "check-dependencies": "^1.1.0",
+        "nodemon": "^1.18.4"
+    }
+}

@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function (app) {
+module.exports = async function (app) {
     let GEO_Handler = require('../Controllers/GEO_Handler');
     app.route('/Send')
         .post(GEO_Handler.sendGEOJSON);

@@ -3,7 +3,7 @@
 
 <head>
     <% include Other/Head %>
-    <link rel="stylesheet" href="../Public/Javascript/Map.js">
+    <link async defer rel="stylesheet" href="/Cascade Style/Map.css">
 </head>
 
 <body>
@@ -26,29 +26,23 @@
     <div class="row" style="margin-top: 10px">
         <div class="container">
             <fieldset>
-                <form class="form-horizontal" id="DevForm">
-                    <div class="form-group">
-                        <input class="form-control" type="text" name="DEV_ID" placeholder="Enter Device ID" required>
-                    </div>
-                    <div class="form-group">
-                        <input class="btn btn-default" type="submit" id="FIND" value="Get Location">
-                    </div>
-                </form>
+                <div class="col">
+                    <input class="form-control" type="text" id="DEV_ID" placeholder="Enter Device ID" required>
+                </div>
+
+                <div class="col">
+                    <input class="btn btn-default" type="submit" id="FIND" value="Get Location">
+                </div>
             </fieldset>
         </div>
     </div>
 
     <div class="row" style="margin-top: 10px">
-        <div class="container">
-            <div id="Locator">
-
-            </div>
-            </div>
+        <div class="container" id="Locator"></div>
     </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5A94GgME82AGLgZyo1bkB1r8F0i7vyF0&callback=initMap"></script>
-    <script src="../Public/Javascript/Map.js"></script>
-
+    <script src="/Javascript/Map.js" async defer></script>
+    
     <% include Other/Foot %>
 </body>
 

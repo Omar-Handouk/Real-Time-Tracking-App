@@ -1,4 +1,5 @@
 ---
+applications:
 - name: Real-Time-Geo-Tracker
   memory: 256M
   instances: 1

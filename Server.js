@@ -20,10 +20,8 @@ app.use(body_parser.json());
 
 app.use(method_override('_method'));
 
-// TODO: Add Routers Here
 let ROUTER  = require('./Server/Routes/Router'); ROUTER(app);
 
-// TODO: Add 404 and 500 Errors
 app.use((request, response, next) => { // eslint-disable-line
     response.status(404);
     response.write('ERROR 404: Page not Found');

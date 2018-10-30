@@ -10,7 +10,7 @@ let now = new Date();
 exports.sendGEOJSON = async function (req, response, next) { // eslint-disable-line
 
     let cloudantDB_URL = ENV.VCAP_SERVICES.cloudantNoSQLDB[0].credentials.url;
-    console.log('GEO_Handler<INFO>: ' + cloudantDB_URL); // eslint-disable-line
+    console.log('GEO_Handler<Info>: ' + cloudantDB_URL); // eslint-disable-line
 
     let payload = req.body;
 
@@ -81,7 +81,7 @@ exports.sendGEOJSON = async function (req, response, next) { // eslint-disable-l
                     if (request_response.error != undefined) {
                         console.log('GEO_Handler.sendGEOJSON<Error>: ' + JSON.stringify(request_response)); // eslint-disable-line
                     } else {
-                        console.log('GEO_Handler.sendGEOJSON<INFO>: ' + JSON.stringify(request_response)); // eslint-disable-line
+                        console.log('GEO_Handler.sendGEOJSON<Info>: ' + JSON.stringify(request_response)); // eslint-disable-line
                         response.json(request_response);
                     }
                 }
